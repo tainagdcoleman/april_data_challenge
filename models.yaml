@@ -1,0 +1,25 @@
+# NRP-managed chat models (https://ellm.nrp-nautilus.io)
+gemma:
+  task: chat
+  model: gemma
+  api_key: ${NRP_API_KEY}
+  base_url: https://ellm.nrp-nautilus.io/v1
+
+qwen3:
+  task: chat
+  model: qwen3
+  api_key: ${NRP_API_KEY}
+  base_url: https://ellm.nrp-nautilus.io/v1
+
+glm-4.7:
+  task: chat
+  model: glm-4.7
+  api_key: ${NRP_API_KEY}
+  base_url: https://ellm.nrp-nautilus.io/v1
+
+# NRP embedding models
+qwen3-embedding:
+  task: embed
+  model: qwen3-embedding
+  api_key: ${NRP_API_KEY}
+  base_url: https://ellm.nrp-nautilus.io/v1
