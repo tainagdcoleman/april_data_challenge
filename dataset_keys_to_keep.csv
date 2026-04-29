@@ -1,0 +1,40 @@
+Metrics,Scan Division,Metric type,Raw point cloud/Voxelized point cloud,Description (simplified),Description (Detailed),,,,,,,,,,
+h_filename,Entire point cloud,NA,NA,File name of the scan,"File name of the scan that includes location ID, plot number, scan date and laser type",,,,,,,,,,1
+h_ground_cnt,Entire point cloud,General,Raw,Number of points classified as ground,The number of points in a raw point cloud that were classified as ground points using a cloth simulation filter,,,,,,,,,,1
+h_not_ground_cnt,Entire point cloud,General,Raw,Number of points not classified as ground,The number of points in a raw point cloud that were not classified as ground points using a cloth simulation filter,,,,,,,,,,1
+h_per_ground,Entire point cloud,General,Raw,Percent of ground points in the scan,The percentage of points in the scan that were classified as ground points using a cloth simulation filter,,,,,,,,,,1
+h_ng_tgi,Entire point cloud,General,Raw,Triangular greenness index of points classified as not ground,Triangular greenness index of points classified as not ground utilizing RGB values from the point cloud,,,,,,,,,,1
+h_ng_vari,Entire point cloud,General,Raw,Visual atmospheric resistance index of points not classified as ground,Visual atmospheric resistance index of points classified as not ground utilizing RGB values from the point cloud,,,,,,,,,,1
+h_zmax,Entire point cloud,General,Raw,Maximum height of the normalized point cloud,The height of the highest point in the normalized point cloud,,,,,,,,,,1
+h_zmean,Entire point cloud,General,Raw,Mean height of the normalized point cloud,The mean height of all points in the normalized point cloud (includes ground points),,,,,,,,,,1
+h_zsd,Entire point cloud,General,Raw,Standard deviation of the height of points in the normalized point cloud,The standard deviation of all points in the normalized point cloud (includes ground points),,,,,,,,,,1
+h_zskew,Entire point cloud,General,Raw,Skewness of point heights in the point cloud,The skewness of all points in the normalized point cloud (includes ground points),,,,,,,,,,1
+h_zkurt,Entire point cloud,General,Raw,Kurtosis of point heights in the point cloud,The kurtosis of all points in the normalized point cloud (includes ground points),,,,,,,,,,1
+h_pzabovezmean,Entire point cloud,General,Raw,Percent of points above two standard deviations above the mean height of the point cloud,The percent of points above two standard deviations above the mean height of the normalized point cloud (includes ground points),,,,,,,,,,1
+h_pzabove2,Entire point cloud,General,Raw,Percent of points above the mean height of the point cloud,The percent of points above the mean height of the normalized point cloud (includes ground points),,,,,,,,,,1
+TBA,Tree data,Trees,Voxelized,Total basal area in the voxelized point cloud (sq. m),Total basal area of all detected overstory trees calculated from classified stem points in the point cloud,,,,,,,,,,1
+Basalarea,Tree data,Trees,Voxelized,Basal area estimated from the tree inventory (sq. ft/acre),"Total basal area of detected overstory trees corrected for possible occlusion, converted to imperial measurements and scaled to acres",,,,,,,,,,1
+MeanTH,Tree data,Trees,Voxelized,Mean tree height,The mean height of all detected overstory trees in the scan,,,,,,,,,,1
+MDBH,Tree data,Trees,Voxelized,Mean dbh,The mean Diameter at breast height (1.37 m) of all detected overstory trees in the scan,,,,,,,,,,1
+TreesN,Tree data,Trees,Voxelized,Number of trees,The number of detected overstory trees in the scan,,,,,,,,,,1
+MaxTH,Tree data,Trees,Voxelized,Maximum tree height,The height of the tallest detected overstory tree,,,,,,,,,,1
+SDHT,Tree data,Trees,Voxelized,Standard deviation of tree heights,The standard deviation of heights of all the detected overstory trees,,,,,,,,,,1
+CBH,Tree data,Trees,Voxelized,Canopy base height,The canopy base height in the scan (currently estimated using the mean tree height minus the standard deviation of tree heights),,,,,,,,,,1
+LAI,Entire voxelized point cloud,General,Voxelized,Calculated leaf area index of the point cloud,The leaf area index calculated from the entire point cloud,,,,,,,,,,1
+ULAI,Entire voxelized point cloud,General,Voxelized,Understory leaf area index,The leaf area index calculated from the understory (1-3 m) strata,,,,,,,,,,1
+MLAI,Entire voxelized point cloud,General,Voxelized,Midstory leaf area index,The leaf area index calculated from the midstory (3-9 m) strata,,,,,,,,,,1
+OLAI,Entire voxelized point cloud,General,Voxelized,Overstory leaf area index,The leaf area index calculated from the overstory (>9 m) strata,,,,,,,,,,1
+FHD,Entire voxelized point cloud,General,Voxelized,Foliage height diversity,"The foliage height diversity (FHD) metric from abundances considered as per-voxel relative LAD values, as described in MacArthur and MacArthur (1961)",,,,,,,,,,1
+GiSimp,Entire voxelized point cloud,General,Voxelized,Gini-Simpson index of foliage structural diversity,The Gini-Simpson (GS) index metric (Simpson diversity from abundances using voxel relative leaf area density),,,,,,,,,,1
+LAHV,Entire voxelized point cloud,General,Voxelized,Leaf Area Height Volume metric,The leaf area height volume (LAHV) metric as described in Almeida et al. (2019) calculated from the entire point cloud,,,,,,,,,,1
+ShrubsN,Shrub data,Shrubs,Voxelized,Number of shrubs in the point cloud,Number of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+shrubArea,Shrub data,Shrubs,Voxelized,Area of shrubs in the point cloud (m‹¨«),Area of shrubs in the point cloud (m‹¨«) calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+scaledShrubArea,Shrub data,Shrubs,Voxelized,Estimated area of shrubs per acre (ft‹¨«/acre),Estimated area of shrubs per acre (ft‹¨«/acre) calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+MeanSH,Shrub data,Shrubs,Voxelized,Mean height of shrubs in the point cloud,Mean height of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+MeanSA,Shrub data,Shrubs,Voxelized,Mean area of shrubs in the point cloud,Mean area of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+MaxSH,Shrub data,Shrubs,Voxelized,Maximum height of shrubs in the point cloud,Maximum height of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+SDSHT,Shrub data,Shrubs,Voxelized,Standard deviation of height of shrubs in the point cloud,Standard deviation of height of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+MeanSD,Shrub data,Shrubs,Voxelized,Mean distance between centroids of shrubs in the point cloud,Mean distance between centroids of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+MaxSD,Shrub data,Shrubs,Voxelized,Maximum distance between centroids of shrubs in the point cloud,Maximum distance between centroids of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+MinSD,Shrub data,Shrubs,Voxelized,Minimum distance between centroids of shrubs in the point cloud,Minimum distance between centroids of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
+SDSD,Shrub data,Shrubs,Voxelized,Standard deviation of distance between centroids of shrubs in the point cloud,Standard deviation of distance between centroids of shrubs in the point cloud calculated from the cloth simulation filter method used to classify shrub points,,,,,,,,,,1
